@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Xrysas's Library System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <nav>
+    <a href="/">Home</a> 
+    <a href="/books">Books</a> 
+    <a href="/authors">Authors</a> 
+    <a href="/members">Members</a> 
+    <a href="/add_book">Add Book</a> 
+    <a href="/add_author">Add Author</a> 
+    <a href="/add_member">Add Member</a> 
+    <a href="/books_by_author">Books by Author</a> 
+    <a href="/available_books">Available Books</a>
+</nav>
+
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
